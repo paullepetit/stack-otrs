@@ -1,0 +1,5 @@
+CREATE USER 'otrs'@'localhost' IDENTIFIED BY 'otrs';
+CREATE DATABASE otrs;
+GRANT ALL PRIVILEGES ON otrs.* TO 'otrs'@'%' WITH GRANT OPTION;
+GRANT ALL ON otrs.* TO 'otrs'@'%' IDENTIFIED BY 'otrs';
+FLUSH PRIVILEGES;
